@@ -1,13 +1,16 @@
+//Precios base placas de video
 const precioRx6500 = 154840
 const precioRtx4090 = 1538730
 const precioRtx4080 = 1132580
-const precioRtx40802 = 1047930      // VIDEO GEFORCE RTX 4080 16GB ASUS ROG STRIX GAMING
-const precioRtx3060ti = 294730      // VIDEO GEFORCE RTX 3060 TI 8GB MSI VENTUS 2X LHR
-const precioRtx3060ti2 = 311280     // VIDEO GEFORCE RTX 3060 TI 8GB MSI GAMING X LHR
+const precioRtx40802 = 1047930      
+const precioRtx3060ti = 294730      
+const precioRtx3060ti2 = 311280   
 
+// Constante de impuesto y descuento
 const impuestoPorcentaje = 10;
 const descuentoPorcentaje = 20;
 
+//Intereses bancos
 const interesesPorBanco = {
     "Santander": 15,
     "BBVA": 20,
@@ -16,14 +19,17 @@ const interesesPorBanco = {
     "Nacion": 2
 };
 
+//Funcion calcular el impuesto
 function calcularImpuesto (precio){
     return precio * (impuestoPorcentaje / 100);
 }
 
+//Funcion calcular el descuento
 function calcularDescuento (precio){
     return precio * (descuentoPorcentaje / 100);
 }
 
+//Funcion calcular el valor total luego del descuento y el impuesto
 function calcularValorTotal (precio){
     const impuesto = calcularImpuesto(precio);
     const descuento = calcularDescuento(precio);
@@ -31,6 +37,7 @@ function calcularValorTotal (precio){
     return valorTotal; 
 }
 
+//Funcion para calcular el precio de las cuotas segun la cantidad introducida
 function calcularCuotas (precio, cuotas, banco) {
     const interesPorcentaje = interesesPorBanco[banco] || 0;
     const interes = precio * (interesPorcentaje / 100);
@@ -39,6 +46,8 @@ function calcularCuotas (precio, cuotas, banco) {
     return valorCuota;
 }
 
+
+//Condicional while para determinar el producto, el banco y la cantidad de cuotas y aplicar las funciones y realizar la operacion matematica.
 let seleccionValida = false;
 
 while (!seleccionValida){
