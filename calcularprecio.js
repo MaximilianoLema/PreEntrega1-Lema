@@ -1,10 +1,10 @@
 //Precios base placas de video
-const precioRx6500 = 154840
-const precioRtx4090 = 1538730
-const precioRtx4080 = 1132580
-const precioRtx40802 = 1047930      
-const precioRtx3060ti = 294730      
-const precioRtx3060ti2 = 311280   
+const precioRx6500 = 154840 //VIDEO RADEON RX 6500 XT 4GB SAPPHIRE PULSE GAMING OC
+const precioRtx4090 = 1538730 //VIDEO GEFORCE RTX 4090 24GB GIGABYTE AORUS MASTER
+const precioRtx4080 = 1132580 //VIDEO GEFORCE RTX 4080 16GB ASUS ROG STRIX GAMING WHITE
+const precioRtx40802 = 1047930 //VIDEO GEFORCE RTX 4080 16GB ASUS ROG STRIX GAMING
+const precioRtx3060ti = 294730 //VIDEO GEFORCE RTX 3060 TI 8GB MSI VENTUS 2X LHR  
+const precioRtx3060ti2 = 311280 //VIDEO GEFORCE RTX 3060 TI 8GB MSI GAMING X LHR  
 
 // Constante de impuesto y descuento
 const impuestoPorcentaje = 10;
