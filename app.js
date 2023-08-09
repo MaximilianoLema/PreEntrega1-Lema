@@ -80,7 +80,7 @@ function seleccionarBanco() {
     
     if(interesesPorBanco.hasOwnProperty(bancoElegido)){
         return bancoElegido
-    }else{
+    }else{ 
         alert ("Porfavor Ingresa un banco correspondiente.")
         return seleccionarBanco();
     }
